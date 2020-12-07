@@ -1,3 +1,5 @@
+//** CALENDAR **/
+
 // set variables
 let today = new Date();
 let dayInt = today.getDate();
@@ -106,6 +108,15 @@ function previous() {
 	showCalendar(month, year);
 }
 
-// function select(d, m, y) {
-// 	document.getElementById("select").innerHTML = new Date(y, m, d);
-// }
+
+//** TASKLIST **/
+
+var TaskList = document.getElementsByTagName("li");
+var i;
+for (i = 0; i < TaskList.length; i++) {
+	var span = document.createElement("span");
+	var txt = document.createTextNode("\u00D7");
+	span.className = "close";
+	span.appendChild(txt);
+	TaskList[i].appendChild
+}

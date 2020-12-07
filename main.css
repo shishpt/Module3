@@ -6,31 +6,42 @@
   font: inherit;
   vertical-align: baseline;
   box-sizing: border-box;
+  background-color: #73939c;
 }
+
+.sideMenu {
+  position: fixed;
+  height: 100%;
+  width: 20em;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  padding: 20px;
+  background-color: aliceblue;
+}
+
 ul {
   list-style-type: none;
 }
 body {
   font-family: Verdana, sans-serif;
 }
-
-.profilePic {
-  border-radius: 55%;
-  width: 600px;
+.calendarContainer {
+  position: relative;
+  border: 3px solid #73ad21;
 }
 
-#calendar {
-  max-width: 1280px;
-  justify-content: center;
+.calendar {
+  position: absolute;
+  right: 0;
+  width: 200px;
+  width: 50%;
 }
 
 .month {
   padding: 70px 25px;
   width: 100%;
-  background: #e9a0df;
   text-align: center;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
 }
 
 .month ul {
@@ -69,13 +80,14 @@ body {
   list-style-type: none;
   text-align: center;
   font-size: 16px;
-  color: #777;
+  color: white;
   padding: 15px;
   border: 1px solid #ccc;
 }
 
 #days li.active {
   background: #e9a0df;
+  border-radius: 75px;
   color: white !important;
 }
 
