@@ -17,18 +17,19 @@
   left: 0;
   transition: 0.5s;
   padding: 20px;
-  background-color: aliceblue;
+  background-color: #A8B7BA;
 }
 
 ul {
   list-style-type: none;
 }
-body {
+/*body {
   font-family: Verdana, sans-serif;
-}
+}*/
+
 .calendarContainer {
-  position: relative;
-  border: 3px solid #73ad21;
+  justify-content: center;  
+  border: 3px solid #73939C;
 }
 
 .calendar {
@@ -62,7 +63,7 @@ body {
 #weekdays {
   margin: 0;
   padding: 10px 0;
-  background-color: #ddd;
+  background-color: #73939C;
 }
 
 #weekdays li {
@@ -72,7 +73,7 @@ body {
 
 #days {
   padding: 10px 0;
-  background: #eee;
+  background: #73939C;
   margin: 0;
 }
 
@@ -80,15 +81,15 @@ body {
   list-style-type: none;
   text-align: center;
   font-size: 16px;
-  color: white;
+  color: #EBE9E8;
   padding: 15px;
-  border: 1px solid #ccc;
+  border: 1px solid #73939C;
 }
 
 #days li.active {
-  background: #e9a0df;
+  background: #A8B7BA;
   border-radius: 75px;
-  color: white !important;
+  color: #EBE9E8 !important;
 }
 
 #next,
@@ -134,4 +135,62 @@ body {
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #A8B7BA;
+  overflow-x: hidden;
+  padding-top: 150px;
+  border-top-right-radius: 6%;
+  border-bottom-right-radius: 6%;  
+  box-shadow: 0px 3px 5px 4px #7e8081;
+  justify-content: flex-end;
+}
+
+.sidenav a { 
+  padding: 50px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #EBE9E8;
+  background-color: #A8B7BA;
+  display: block;
+  font-family: 'Poppins' ;font-size: 22px; 
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
