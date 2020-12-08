@@ -1,0 +1,72 @@
+* {
+    color: #DDDAD8;
+    
+   
+}
+
+.center {
+    padding: 70px 0;
+    border: 3px solid green;
+    text-align: center;
+  }
+
+Body {  
+    font-family: 'Poppins' ;font-size: 15px; 
+    background-color: #73939C;  
+    justify-content: center;
+    padding: 15%;
+  
+}  
+button {   
+        background-color: #DDDAD8;   
+        width: 15%, auto;  
+        color: #8A8A8A;   
+        padding: 10px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;  
+        border-radius: 30px 30px 30px 30px; 
+    }   
+ form {   
+        border: 3px solid #73939C;   
+        padding-top: inherit;
+        
+        
+    }   
+ input[type=text], input[type=password] {   
+        width: auto;   
+        margin: 8px 0;  
+        padding: 12px 50px;   
+        display: inline-block;   
+        border: 2px solid #73939C;   
+        box-sizing: border-box;   
+        border-radius: 30px 30px 30px 30px;
+        display: flex;
+    }  
+ button:hover {   
+        opacity: 0.7;   
+    }   
+  .cancelbtn {   
+        width: auto;   
+        padding: 10px 18px;  
+        margin: 10px 5px;  
+        display: flex;
+        border-radius: 30px 30px 30px 30px;
+    }   
+        
+     
+ .container {   
+        padding: 25px;   
+        background-color: #73939C;  
+        
+       }
+       
+       
+
+h1 {
+    padding-top: 20%;
+}
+
+   
+
+  

@@ -7,6 +7,7 @@
   vertical-align: baseline;
   box-sizing: border-box;
   background-color: #73939c;
+
 }
 
 .sideMenu {
@@ -30,6 +31,7 @@ ul {
 .calendarContainer {
   justify-content: center;  
   border: 3px solid #73939C;
+  
 }
 
 .calendar {
@@ -37,6 +39,7 @@ ul {
   right: 0;
   width: 200px;
   width: 50%;
+  
 }
 
 .month {
@@ -156,7 +159,7 @@ body {
 
 .sidenav {
   height: 100%;
-  width: 160px;
+  width: 200px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -170,8 +173,13 @@ body {
   justify-content: flex-end;
 }
 
+.material-icons {
+  color: white;
+  background-color: #A8B7BA;
+
+}
 .sidenav a { 
-  padding: 50px 8px 6px 16px;
+  padding: 50px 8px 6px 30px;
   text-decoration: none;
   font-size: 20px;
   color: #EBE9E8;
@@ -183,6 +191,9 @@ body {
 .sidenav a:hover {
   color: #f1f1f1;
 }
+
+
+
 
 .main {
   margin-left: 160px; /* Same as the width of the sidenav */
