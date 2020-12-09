@@ -1,8 +1,25 @@
 /* Include the padding and border in an element's total width and height */
 * {
   box-sizing: border-box;
+  background-color: #73939C;  
+  font-family: 'Poppins' ;font-size: 22px; 
+  
+  
+}
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -3em; /* 6/2 = 3 */
+  margin-left: -9em; /* 18/2 = 9 */
+  width: 18em;
+  height: 6em; 
 }
 
+li {
+  color: #73939C;
+  
+}
 /* Remove margins and padding from the list */
 ul {
   margin: 0;
@@ -14,9 +31,12 @@ ul li {
   cursor: pointer;
   position: relative;
   padding: 12px 8px 12px 40px;
-  background: #eee;
+  background-color:#EBE9E8;
+  font-family: 'Poppins' ;font-size: 22px; 
   font-size: 18px;
   transition: 0.2s;
+  width: 40%;
+  border-radius: 15px 15px 15px 15px;
 
   /* make the list items unselectable */
   -webkit-user-select: none;
@@ -32,7 +52,7 @@ ul li:nth-child(odd) {
 
 /* Darker background-color on hover */
 ul li:hover {
-  background: #ddd;
+  background: #A8B7BA;
 }
 
 /* When clicked on, add a background color and strike out text */
@@ -40,6 +60,7 @@ ul li.checked {
   background: #888;
   color: #fff;
   text-decoration: line-through;
+  font-family: 'Poppins' ;font-size: 22px; 
 }
 
 /* Add a "checked" mark when clicked on */
@@ -54,6 +75,7 @@ ul li.checked::before {
   transform: rotate(45deg);
   height: 15px;
   width: 7px;
+  text-align: center;
 }
 
 /* Style the close button */
@@ -90,26 +112,36 @@ input {
   margin: 0;
   border: none;
   border-radius: 0;
-  width: 25%;
+  width: 50%;
   padding: 10px;
-  float: left;
+  float: center;
   font-size: 16px;
+  border-radius: 15px 15px 15px 15px;
+  background: #EBE9E8;
+  
 }
 
 /* Style the "Add" button */
 .addBtn {
   padding: 10px;
-  width: 25%;
-  background: #d9d9d9;
-  color: #555;
-  float: left;
+  width: 50%;
+  background: #A8B7BA;
+  color: white; 
+  float: center;
   text-align: center;
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s;
   border-radius: 0;
+  border-radius: 15px 15px 15px 15px;
+  
 }
 
 .addBtn:hover {
   background-color: #bbb;
+}
+
+
+h2 {
+  padding-top: 30%;
 }

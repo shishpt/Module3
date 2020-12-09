@@ -160,7 +160,7 @@ body {
 
 .sidenav {
   height: 100%;
-  width: 200px;
+  width: 316px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -182,7 +182,7 @@ body {
 
 }
 .sidenav a { 
-  padding: 50px 8px 6px 30px;
+  padding: 50px 8px 6px 80px;
   text-decoration: none;
   font-size: 20px;
   color: #EBE9E8;
