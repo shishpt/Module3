@@ -1,0 +1,196 @@
+@media screen and (min-width:700px) {
+	.schedule {
+		display: grid;
+		grid-gap: 1em;
+		grid-template-rows:
+			[tracks] auto
+			[time-0800] 1fr
+			[time-0830] 1fr
+			[time-0900] 1fr
+            [time-0930] 1fr
+            [time-1000] 1fr
+			[time-1030] 1fr
+			[time-1100] 1fr
+			[time-1130] 1fr
+			[time-1200] 1fr;
+		
+		/* using named gridlines helps a lot with understanding
+
+            Note 2: Use "auto" instead of "1fr" for a more compact schedule where height of
+            a slot is not proportional to the session length. 
+            Implementing a "compact" shortcode attribute might make sense for this!
+			Try 0.5fr for more compact equal rows. 
+			*/
+        
+            
+            /*The new fr unit represents a fraction of the available space in the grid container. */
+		grid-template-columns:
+			[times] 4em
+			[track-1-start] 1fr
+			[track-1-end track-2-start] 1fr
+			[track-2-end track-3-start] 1fr
+            [track-3-end track-4-start] 1fr
+            [track-4-end track-5-start] 1fr
+			[track-5-end];
+	}
+}
+
+.time-slot {
+	grid-column: times; /*adds the time stamp in front of the columns */
+}
+
+.track-slot {
+	display: none; /* hidden on small screens and browsers without grid support */
+}
+
+
+/* the color of the track slots */
+@supports( display:grid ) {
+	@media screen and (min-width:700px) {
+		.track-slot {
+			display: block;
+			padding: 10px 5px 5px;
+			position: sticky;
+			top: 0;
+			z-index: 1000;
+            background-color: #73939C;
+            color: #EBE9E8;
+            
+		}
+	}
+}
+
+/* Small-screen & fallback styles */
+.session {
+	margin-bottom:  1em;
+}
+
+@supports( display:grid ) {
+	@media screen and (min-width: 700px) {
+		.session {
+			margin: 0;
+		}	
+	}
+}
+
+/*design */
+body {
+	padding: 50px;
+	max-width: 1100px;
+	margin: 0 auto;
+    line-height: 1.5;
+    background-color: #73939c;
+    font-family: 'Poppins' ;font-size: 15px; 
+    color: #EBE9E8;
+}
+
+.session {
+	padding: .5em;
+	border-radius: 12px;
+	font-size: 14px;
+	box-shadow:
+		rgba(255,255,255,.6) 1px 1px 0,
+		rgba(0,0,0,.3) 4px 4px 0;
+}
+
+.session-title,
+.session-time,
+.session-track,
+.session-presenter {
+	display: block;
+}
+
+.session-title,
+.time-slot {
+	margin: 0;
+	font-size: 1em;
+}
+
+.session-title a {
+	color: #fff;
+    
+}
+
+
+:focus {
+		outline: 2px dotted rgba(255,255,255,.8);
+    }
+    
+/*:hover {
+		
+    } */
+    
+.track-slot,
+.time-slot {
+	font-weight: bold;
+	font-size:.75em;
+}
+
+.track-1 {
+	background-color: #A8B7BA;
+	color: #EBE9E8;
+}
+
+.track-2 {
+	background-color: #B0D1E7;
+	color: #EBE9E8;
+}
+
+.track-3 {
+	background-color: #8A8A8A;
+    color: #EBE9E8;
+    
+}
+
+.track-4 {
+	background-color: #85C7F2;
+	color: #EBE9E8;
+}
+
+.track-5 {
+    background: #535C5F;
+    color: #EBE9E8;
+}
+.track-all {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #73939C;
+	color: #EBE9E8;
+	box-shadow: none;
+}
+
+.text {
+	max-width: 750px;
+	font-size: 18px;
+	margin: 0 auto 50px;
+}
+
+.meta {
+	color: #555;
+	font-style: italic;
+}
+
+.meta a {
+	color: #555;
+}
+
+hr {
+	margin: 40px 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+.session-7 {
+    background-color: #EBE9E8;
+    color: #73939C;
+    padding: .5em;
+	border-radius: 12px;
+	font-size: 14px;
+	box-shadow:
+		rgba(255,255,255,.6) 1px 1px 0,
+		rgba(0,0,0,.3) 4px 4px 0;
+}
+
