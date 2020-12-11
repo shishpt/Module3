@@ -10,16 +10,7 @@
 
 }
 
-.sideMenu {
-  position: fixed;
-  height: 100%;
-  width: 20em;
-  top: 0;
-  left: 0;
-  transition: 0.5s;
-  padding: 20px;
-  background-color: #A8B7BA;
-}
+
 
 ul {
   list-style-type: none;
@@ -40,6 +31,7 @@ ul {
   right: 0;
   width: 200px;
   width: 50%;
+  padding-left: 10%;
   
 }
 
@@ -210,3 +202,26 @@ body {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+
+h3 {
+  padding-top: 5%;
+  padding-bottom: 2%;
+  padding-left: 22%;
+  font-family: 'Poppins' ;font-size: 50px; 
+  color: #EBE9E8;
+  font-weight: lighter;
+}
+
+h4 {
+  
+  padding-bottom: 3%;
+  padding-left: 30%;
+  font-family: 'Poppins' ;font-size: 30px; 
+  color: #EBE9E8;
+}
+
+
+
+
+

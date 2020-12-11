@@ -145,3 +145,41 @@ input {
 h2 {
   padding-top: 30%;
 }
+
+
+
+.sidenav {
+  height: 100%;
+  width: 316px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #A8B7BA;
+  overflow-x: hidden;
+  padding-top: 150px;
+  border-top-right-radius: 6%;
+  border-bottom-right-radius: 6%;  
+  box-shadow: 0px 3px 5px 4px #7e8081;
+  justify-content: flex-start;
+  flex-direction: column;
+  display: flex;
+}
+
+
+.sidenav a { 
+  padding: 50px 8px 6px 80px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #EBE9E8;
+  background-color: #A8B7BA;
+  font-family: 'Poppins' ;font-size: 22px; 
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav div{
+  background-color: #A8B7BA;
+}
