@@ -12,22 +12,16 @@
     <title>Document</title>
 </head>
 <body>
-    <!--
-        <div class="sideMenu">
-        <h3>Meetings</h3>        
-        <h3>Meetings</h3>        
-        <h3>Meetings</h3>        
-        <h3>Meetings</h3>
-    </div>
--->
+
 
 <!-- side bar menu -->
 <div class="sidenav">
-   <div><span class="material-icons">today</span><a href="#">Today</a></div> 
-   <div><span class="material-icons">book_online</span><a href="#">Upcoming</a></div>
-    <a href="index.html">Calendar</a>
-    <a href="#">Meetings</a>
-    <a href="tasks.html">Tasks</a>
+
+    <div class="material-icons">book_online<a href="#">Upcoming</a></div>
+    <div class="material-icons">calendar_today<a href="index.html">Calendar</a></div>
+    <div class="material-icons">message<a href="#">Meetings</a></div>
+    <div class="material-icons">done<span><a href="tasks.html">Tasks</a></span></div>
+
    </div>
 
    
@@ -69,6 +63,24 @@
         </div>
     </div>
 
+    <div class="tasksContainer">
+        <div class="tasks">
+            <center>
+                <div id="TaskList" class="header">
+                    <center><h2 class="taskH2">Todays Tasks</h2></center>
+                    <center><input type="text" id="myInput" placeholder="Title">
+                    <span onclick="newElement()" class="addBtn">+</span></center>
+                </div>
+                <ul id="newItems">
+                    <li class="taskItem">Meeting at 9:30</li>
+                    <li class="taskItem">Work on 1st draft</li>
+                    <li class="taskItem">Reach out to potential client</li>
+                </ul>
+            </center>
+        </div>
+    </div>
+    <script src="tasks.js"></script>
     <script src="main.js"></script>
+
 </body>
 </html>

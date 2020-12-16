@@ -2,45 +2,29 @@
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
+  /* font-size: 100%;
+  font: inherit; */
   vertical-align: baseline;
   box-sizing: border-box;
   background-color: #73939c;
-
-}
-
-.sideMenu {
-  position: fixed;
-  height: 100%;
-  width: 20em;
-  top: 0;
-  left: 0;
-  transition: 0.5s;
-  padding: 20px;
-  background-color: #A8B7BA;
+  font-family: "Poppins";
+  font-size: 22px;
 }
 
 ul {
   list-style-type: none;
 }
-/*body {
-  font-family: Verdana, sans-serif;
-}*/
 
 .calendarContainer {
-  justify-content: center;  
-  border: 3px solid #73939C;
+  justify-content: center;
+  border: 3px solid #73939c;
   display: flex;
-  
 }
 
 .calendar {
-  
   right: 0;
   width: 200px;
   width: 50%;
-  
 }
 
 .month {
@@ -67,7 +51,7 @@ ul {
 #weekdays {
   margin: 0;
   padding: 10px 0;
-  background-color: #73939C;
+  background-color: #73939c;
 }
 
 #weekdays li {
@@ -77,7 +61,7 @@ ul {
 
 #days {
   padding: 10px 0;
-  background: #73939C;
+  background: #73939c;
   margin: 0;
 }
 
@@ -85,19 +69,71 @@ ul {
   list-style-type: none;
   text-align: center;
   font-size: 16px;
-  color: #EBE9E8;
+  color: #ebe9e8;
   padding: 15px;
-  border: 1px solid #73939C;
+  border: 1px solid #73939c;
 }
 
 #days li.active {
-  background: #A8B7BA;
+  background: #a8b7ba;
   border-radius: 75px;
-  color: #EBE9E8 !important;
+  color: #ebe9e8 !important;
 }
 
 #next,
 #prev {
+  cursor: pointer;
+}
+
+/* **TASKLIST** */
+
+.taskH2 {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding-bottom: 25px;
+}
+
+#myInput {
+  margin: 0;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 15px 15px 15px 15px;
+  background: #ebe9e8;
+}
+
+input {
+  text-align: center;
+}
+
+.addBtn {
+  padding: 10px;
+  width: 50%;
+  background: #a8b7ba;
+  color: white;
+  float: center;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.tasks {
+  padding-top: 3%;
+}
+
+.taskItem {
+  color: white;
+  margin: 10px;
+}
+
+.close {
+  position: absolute;
+  right: 40%;
   cursor: pointer;
 }
 
@@ -141,19 +177,6 @@ ul {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 body {
   font-family: "Lato", sans-serif;
 }
@@ -165,11 +188,11 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #A8B7BA;
+  background-color: #a8b7ba;
   overflow-x: hidden;
   padding-top: 150px;
   border-top-right-radius: 6%;
-  border-bottom-right-radius: 6%;  
+  border-bottom-right-radius: 6%;
   box-shadow: 0px 3px 5px 4px #7e8081;
   justify-content: flex-start;
   flex-direction: column;
@@ -177,28 +200,28 @@ body {
 }
 
 .material-icons {
+  padding-left: 30px;
   color: white;
-  background-color: #A8B7BA;
-
+  background-color: #a8b7ba;
+  padding-block: 20px;
 }
-.sidenav a { 
-  padding: 50px 8px 6px 80px;
+.sidenav a {
+  padding: 10px 8px 6px 10px;
   text-decoration: none;
   font-size: 20px;
-  color: #EBE9E8;
-  background-color: #A8B7BA;
-  font-family: 'Poppins' ;font-size: 22px; 
+  color: #ebe9e8;
+  background-color: #a8b7ba;
+  font-family: "Poppins";
+  font-size: 22px;
 }
 
 .sidenav a:hover {
   color: #f1f1f1;
 }
 
-.sidenav div{
-  background-color: #A8B7BA;
+.sidenav div {
+  background-color: #a8b7ba;
 }
-
-
 
 .main {
   margin-left: 160px; /* Same as the width of the sidenav */
@@ -207,6 +230,10 @@ body {
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }

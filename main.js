@@ -1,11 +1,12 @@
 //** CALENDAR **/
 
-// set variables
+// set variables for the day, month, year 
 let today = new Date();
-let dayInt = today.getDate();
+let dayInt = today.getDate();  
 let month = today.getMonth();
 let year = today.getFullYear();
-// body of the calendar
+
+// body layot for calendar
 let calendarBody = document.getElementById("days");
 
 let months = [
@@ -23,32 +24,35 @@ let months = [
 	"December"
 ];
 
-// next and previous functionality
+// button actions for previous and next
 let nextBtn = document.getElementById("next");
 let prevBtn = document.getElementById("prev");
 
-nextBtn.onclick = function() {
-	next();
-};
 prevBtn.onclick = function() {
 	previous();
 };
 
-// on select of date
-// let selectDay = document.getElementsByClassName("singleDay");
+nextBtn.onclick = function() {
+	next();
+};
 
-// init calendar
+
+
+// build calendar
 showCalendar(month, year);
 
 function showCalendar(month, year) {
-	// gets the day of the week for this date
+
+	// today
 	let firstDay = new Date(year, month).getDay();
-	// clearing all previous cells
+	
+	// empty state
 	calendarBody.innerHTML = "";
+
 	// checking the mount of days in this month to control the loop
 	let totalDays = daysInMonth(month, year);
 
-	// adding the blank boxes so that date start on correct day of the week
+	// buffer boxes
 	blankDates(firstDay);
 	// adding the dates to the calendar
 	for (let day = 1; day <= totalDays; day++) {
@@ -106,17 +110,4 @@ function previous() {
 	year = month === 0 ? year - 1 : year;
 	month = month === 0 ? 11 : month - 1;
 	showCalendar(month, year);
-}
-
-
-//** TASKLIST **/
-
-var TaskList = document.getElementsByTagName("li");
-var i;
-for (i = 0; i < TaskList.length; i++) {
-	var span = document.createElement("span");
-	var txt = document.createTextNode("\u00D7");
-	span.className = "close";
-	span.appendChild(txt);
-	TaskList[i].appendChild
 }
